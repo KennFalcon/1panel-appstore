@@ -16,7 +16,7 @@ services:
     ports:
       - ${PANEL_APP_PORT_HTTP}:5601
     volumes:
-      - "./data/conf/kibana.yml:/usr/share/kibana/config/kibana.yml"
+      - "./data/config/kibana.yml:/usr/share/kibana/config/kibana.yml"
     environment:
       - SERVER_NAME="kibana"
       - SERVER_HOST="0.0.0.0"
